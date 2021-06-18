@@ -13,6 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+
+    $datiMovie = config("comics");
+    
+    $datiView= [
+        "moviesList" => $datiMovie
+    ];
+    // return view('welcome', [
+    //    "moviesList" => $datiMovie
+    // ]);
+    return view('welcome', $datiView);
 });
+
+Route::get('/navbar', function () {
+    return "";
+})->name("visa");
+Route::get('/additiona_sites', function () {
+    return "";
+})->name("additional-sites");
+
+

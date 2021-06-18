@@ -6,13 +6,21 @@
 
 @section('content')
 {{-- @dump($moviesList) --}}
-<div class="movie-container">
+<main>
+    <div class="movie-container">
 
-    @foreach($moviesList as $valueMovie)
-        <div class="single-movie">
-            <img src="{{ $valueMovie['thumb'] }}" alt="movie">
-            <h4>{{  $valueMovie['series'] }}</h4>
-        </div>
-    @endforeach
-</div>
+        @foreach($moviesList as $valueMovie)
+            <div class="single-movie">
+                <div class="features-image">
+                    <div class="wrap-only-img">
+
+                        <img src="{{ $valueMovie['thumb'] }}" alt="movie">
+                    </div>
+                    <h4>{{  $valueMovie['series'] }}</h4>
+                </div>
+            </div>
+        @endforeach
+    </div>
+</main>
+
 @endsection

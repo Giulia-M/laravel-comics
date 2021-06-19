@@ -1,16 +1,25 @@
 <header>
-    <div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="{{ route('visa')}}">DC POWER VISA</a>
+    <div class="blue-bg">
+        <nav class="top-nav">
+            <ul class="d-flex">
+                <li class="list-item">
+                    <a href="{{ route('visa')}}">DC POWER VISA
+                      <span>&reg;</span> 
+                    </a>
+                    
                 </li>
-                <li>
-                    <a href="{{ route('additional-sites')}}">ADDITIONAL DC SITES</a>
+                <li class="list-item">
+                    <a href="{{ route('additional-sites')}}">ADDITIONAL DC SITES
+                        <i class=" fas fa-sort-down"></i>
+                    </a>
+
                 </li>
             </ul>
         </nav>
-        <nav>
+    </div>
+
+    <div>
+        <nav class="bot-nav">
             <div>
                 <img src=" {{ asset('images/dc-logo.png') }}" alt="dc-logo">
             </div>
@@ -44,8 +53,15 @@
                 </li>
                 <li>
                     <a href="">Shop</a>
+                    <span class="my-sort-down">
+                        <i class=" fas fa-sort-down"></i>
+                    </span>
                 </li>
             </ul>
+            <form action="">
+                <input type="text" placeholder="Search">
+                <i class="fas fa-search"></i>
+            </form>
         </nav>
     </div>
 </header>

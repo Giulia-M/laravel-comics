@@ -1,4 +1,6 @@
 @import "partials/header"; 
+@import "partials/jumbotron"; 
+
 @import "partials/main"; 
 
 @import "partials/footer"; 
@@ -10,5 +12,6 @@
 }
 body {
 
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    
 }

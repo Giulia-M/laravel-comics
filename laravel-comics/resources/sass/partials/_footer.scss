@@ -4,9 +4,8 @@ footer {
 
         background-image: url('/images/footer-bg.jpg');
         .footer-top {
-            max-width: 1200px;
-            width: 100%;
-            margin: auto;
+            @include container-w;
+            
             padding-bottom: $spacing;
     
             color: #fff;
@@ -34,6 +33,7 @@ footer {
                                 font-size: $font-size;
                                 li {
                                     list-style:none;
+                                    padding: 3px 0;
                                     
                                     a {
                                         color: $text_color_grey;
@@ -54,6 +54,7 @@ footer {
                                 font-size: $font-size;
                                 li {
                                     list-style:none;
+                                    padding: 3px 0;
                                     
                                     a {
                                         color: $text_color_grey;
@@ -95,9 +96,8 @@ footer {
     .footer-bott {
         background-color:$bg_dark_grey_footer;
         .container {
-            max-width: 1200px;
-            margin: auto;
-            width: 100%;
+            @include container-w;
+            
             padding: ($spacing * 2) 0;
             display: flex;
             justify-content: space-between;
@@ -112,6 +112,7 @@ footer {
                     text-decoration: none;
                     text-transform: uppercase;
                     color: #fff;
+                    font-weight: bolder;
                 }
             }
 

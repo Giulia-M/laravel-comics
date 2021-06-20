@@ -44,6 +44,7 @@
     </section>
 
     <section class="blue-bg">
+
         <div class="max-cont">
             <div class="box-mod">
             

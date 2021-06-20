@@ -4,10 +4,7 @@ header {
 
         background-color: $color_blue;
         .top-nav {
-            margin: auto;
-            max-width: 1200px;
-    
-            width: 100%;
+            @include container-w;
             font-size: 12px;
             font-weight: bolder;
             padding: 4px 0;
@@ -38,9 +35,8 @@ header {
     div {
        
         .bot-nav {
-            margin: auto;
-            max-width: 1200px;
-            width: 100%;
+            @include container-w;
+
             display: flex;
             justify-content: space-between;
             align-items: center;

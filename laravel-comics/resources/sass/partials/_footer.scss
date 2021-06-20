@@ -1,0 +1,135 @@
+footer {
+
+    .footer-bg-img {
+
+        background-image: url('/images/footer-bg.jpg');
+        .footer-top {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            padding-bottom: $spacing;
+    
+            color: #fff;
+            overflow: hidden;
+            .d-flex {
+                display: flex;
+                position: relative;
+                .col-6.padding{
+                    width: $col-6;
+                    padding: ($spacing*2) 0;
+                    .row {
+                        display: flex;
+    
+                        .col-3 {
+                            width: $col-3;
+                            h3 {
+                                text-transform: uppercase;
+                                margin-bottom: $spacing / 2;
+                            }
+                            .margin {
+                                margin: $spacing 0;       
+                            }
+                            ul {
+                                font-family: 'Cardo', serif;
+                                font-size: $font-size;
+                                li {
+                                    list-style:none;
+                                    
+                                    a {
+                                        color: $text_color_grey;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .col-6 {
+                            width: $col-6; 
+                            h3 {
+                                text-transform: uppercase;
+                                margin-bottom: $spacing / 2;
+                            }
+                            ul {
+                                font-family: 'Cardo', serif;
+                                font-size: $font-size;
+                                li {
+                                    list-style:none;
+                                    
+                                    a {
+                                        color: $text_color_grey;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                
+    
+                .wrap-dc-logo-bg {
+                    
+                    position: absolute;
+                    overflow: hidden;
+                    top: -89px;
+                    right: 30px;
+                    
+                }
+            }
+    
+            .cookies {
+                color: $text_color_grey;
+                display: inline-block;
+                font-family: 'Cardo', serif;
+                font-size: $font-size;
+                span {
+                    a {
+                        text-decoration: none;
+                        color:$color_blue_secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bott {
+        background-color:$bg_dark_grey_footer;
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            width: 100%;
+            padding: ($spacing * 2) 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                border: $border_blue_button 2px solid;
+                padding: ($spacing/2);
+
+                background-color:$bg_dark_grey_footer ;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            }
+
+            .d-flex {
+                display: flex;
+                h2 {
+                    color: $color_blue;
+                    text-transform: uppercase;
+                    margin-right: $spacing/2;
+                }
+                img {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 7px;
+                }
+            }
+        }
+    }
+
+}

@@ -4,8 +4,10 @@
             <ul class="d-flex">
                 <li class="list-item">
                     <a href="{{ route('visa')}}">DC POWER VISA
-                      <span>&reg;</span> 
+                        <span>&reg;</span> 
+
                     </a>
+
                     
                 </li>
                 <li class="list-item">
@@ -25,34 +27,34 @@
             </div>
             <ul>
                 <li>
-                    <a href="">Characters</a>
+                    <a href="#">Characters</a>
                 </li>
                 <li>
-                    <a href="">Comics</a>
+                    <a href="#">Comics</a>
                 </li>
                 <li>
-                    <a href="">Movies</a>
+                    <a href="#">Movies</a>
                 </li>
                 <li>
-                    <a href="">TV</a>
+                    <a href="#">TV</a>
                 </li>
                 <li>
-                    <a href="">Games</a>
+                    <a href="#">Games</a>
                 </li>
                 <li>
-                    <a href="">Collectibles</a>
+                    <a href="#">Collectibles</a>
                 </li>
                 <li>
-                    <a href="">Videos</a>
+                    <a href="#">Videos</a>
                 </li>
                 <li>
-                    <a href="">Fans</a>
+                    <a href="#">Fans</a>
                 </li>
                 <li>
-                    <a href="">News</a>
+                    <a href="#">News</a>
                 </li>
                 <li>
-                    <a href="">Shop</a>
+                    <a href="#">Shop</a>
                     <span class="my-sort-down">
                         <i class=" fas fa-sort-down"></i>
                     </span>

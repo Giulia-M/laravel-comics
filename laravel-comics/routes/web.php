@@ -30,7 +30,7 @@ Route::get('/', function () {
 Route::get('/navbar', function () {
     return "";
 })->name("visa");
-Route::get('/additiona_sites', function () {
+Route::get('/additional_sites', function () {
     return "";
 })->name("additional-sites");
 

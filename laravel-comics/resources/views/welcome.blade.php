@@ -7,7 +7,7 @@
 
 @section('content')
 {{-- @dump($moviesList) --}}
-<main>
+
     <section class="bg-dark">
     
         <div class="maxi-container">
@@ -21,16 +21,22 @@
             <div class="movie-container">
                 
 
-                @foreach($moviesList as $valueMovie)
+                @foreach($moviesList as $key=> $valueMovie)
+                    
+                    
                     <div class="single-movie">
                         <div class="features-image">
-                            <div class="wrap-only-img">
+                            <a href="{{ route('Comic', ['index' => $key])}}">
+                                <div class="wrap-only-img">
 
-                                <img src="{{ $valueMovie['thumb'] }}" alt="movie">
-                            </div>
-                            <h4>{{  $valueMovie['series'] }}</h4>
+                                    <img src="{{ $valueMovie['thumb'] }}" alt="movie">
+                                </div>
+                                <h4>{{  $valueMovie['series'] }}</h4>
+                            </a>
                         </div>
                     </div>
+                    
+                    
                 @endforeach
             </div>
         </div>
@@ -93,10 +99,6 @@
             
         </div>
     </section>
-
-    
-</main>
-
 
 
 @endsection

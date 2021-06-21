@@ -24,8 +24,10 @@
     
 
     @include('partials.jumbotron')
-   
-    @yield('content')
+    <main>
+    
+        @yield('content')
+    </main>
 
     
 

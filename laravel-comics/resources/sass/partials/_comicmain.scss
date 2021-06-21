@@ -1,0 +1,93 @@
+.bg-blue {
+
+    background-color: $color_blue;
+    height: $spacing * 4;
+
+    .position-relative {
+        position: relative;
+        display: inline-block;
+
+        .position-absolute {
+            position: absolute;
+                top: -242px;
+
+                left: 260px;
+            border: 1px solid #fff;
+        }
+        .comic-book {
+            display: inline-block;
+            position: absolute;
+            top: -241px;
+            left: 262px;
+            z-index: 2;
+            background-color: #00A9D9;
+            color: #fff;
+            width: 97px;   
+            text-transform: uppercase;
+            font-size: 12px;
+            text-align: center;
+            
+        }
+        .view-gallery {
+            background-color: #00A9D9;
+            color: #fff;
+            display: inline-block;
+            position: absolute;
+            top: 40px;
+            left: 261px;
+            text-align: center;
+            width: 192px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+   
+
+}
+
+
+.wrap {
+    @include container-w;
+
+   
+    color: #1B5068;
+    padding: $spacing * 4 0;
+    display: flex;
+
+    .col-8 {
+        width: 66.6666%;
+        // color: #88F29B;
+        // color: #55BA59;
+
+        .row {
+            display: flex;
+            background-color:#55BA59;
+            justify-content: space-between;
+            text-transform: uppercase;
+
+
+
+            .col-8 {
+                width: 66.6666%;
+                display: flex;
+                justify-content: space-between;
+                color: #88F29B;
+                border-right: 1px solid grey;
+
+                padding: 10px;
+            }
+            .col-4 {
+                width: $col-4;
+                text-align: center;
+                padding: 10px;
+             
+
+            }
+        }
+    }
+    .col-4.wrap-images-superman {
+        width: $col-4;
+        text-align: end;
+    }
+}

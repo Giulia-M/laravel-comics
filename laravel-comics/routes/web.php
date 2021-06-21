@@ -27,9 +27,23 @@ Route::get('/', function () {
     return view('welcome', $datiView);
 });
 
+Route::get('/comic/{index}', function ($index) {
+
+    $datiMovie = config("comics");
+
+    if(!is_numeric($index) || $index < 0 || $index > count($datiMovie) - 1) {
+        abort(404, "Comics non esistente");
+    }
+    $comicScelto =$datiMovie[$index];
+    return view('/partials/singlecomics', [
+        "comic" => $comicScelto
+    ]);
+})->name("Comic");
+
 Route::get('/navbar', function () {
     return "";
 })->name("visa");
+
 Route::get('/additional_sites', function () {
     return "";
 })->name("additional-sites");

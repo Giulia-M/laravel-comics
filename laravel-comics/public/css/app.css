@@ -40,6 +40,11 @@ header .blue-bg .top-nav .d-flex .list-item a {
   text-transform: uppercase;
 }
 
+header .blue-bg .top-nav .d-flex .list-item a.active {
+  color: #0282F9;
+  text-decoration: none;
+}
+
 header div .bot-nav {
   margin: auto;
   max-width: 1200px;

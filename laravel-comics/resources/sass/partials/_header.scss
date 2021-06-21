@@ -23,6 +23,10 @@ header {
                         text-decoration: none;
                         color: #fff;
                         text-transform: uppercase;
+                        &.active {
+                            color: #0282F9;
+                            text-decoration: none;
+                        }
                         
     
                     }

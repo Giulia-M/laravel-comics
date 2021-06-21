@@ -25,7 +25,7 @@ Route::get('/', function () {
     //    "moviesList" => $datiMovie
     // ]);
     return view('welcome', $datiView);
-});
+})->name("pagina-welcome");
 
 Route::get('/comic/{index}', function ($index) {
 

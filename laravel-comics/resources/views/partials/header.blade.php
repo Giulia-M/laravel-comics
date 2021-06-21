@@ -21,16 +21,29 @@
     </div>
 
     <div>
+        {{-- nell if ternario l'index = 0 equivale a false  --}}
+        @php
+            function setLinkClass(...$pageNames){
+                $routeName = Request::route()->getName();
+                $contains = array_search( $routeName, $pageNames);
+                
+                return $contains !== false ? 'active' : '';
+            }
+        @endphp
+
         <nav class="bot-nav">
             <div>
                 <img src=" {{ asset('images/dc-logo.png') }}" alt="dc-logo">
             </div>
             <ul>
                 <li>
-                    <a href="#">Characters</a>
+                    <a href="#"  href="#">Characters</a>
+                    {{-- <a href="#" class=" {{ Request::route()->getName() == 'pagina-welcome' ? 'active' : '' }} "  href="{{ route('pagina-welcome') }}">Characters</a> --}}
+
                 </li>
                 <li>
-                    <a href="#">Comics</a>
+                    {{-- nn funziona --}}
+                    <a href="#" class="{{ setLinkClass('pagina-welcome' , 'Comic') }}"  href="{{ route('pagina-welcome') }}">Comics</a>
                 </li>
                 <li>
                     <a href="#">Movies</a>

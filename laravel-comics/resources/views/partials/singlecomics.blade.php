@@ -82,7 +82,7 @@
 
     </div>
 
-    <section class="sec-2" >
+    <section class="sec-2">
         <div class="row">
             <div class="col-5 offset-1">
                 <h2>Talent</h2>

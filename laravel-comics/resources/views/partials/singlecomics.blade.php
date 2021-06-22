@@ -98,12 +98,16 @@
 
                         <div class="artists">
                             @foreach($comic['artists'] as $key => $value)
-                            
-                                <span>
+                                {{-- <span>
                                     {{$value}} 
-                                    {{-- {{ implode(', ', $value) }} --}}
-                                </span>
+                                   
+                                </span> --}}
                             @endforeach
+
+                            <span class="comma">
+                                   
+                                {!! collect($comic['artists'])->implode(',') !!}
+                            </span>
                         
                         </div>
 
@@ -121,12 +125,16 @@
                         <div class="written-by">
                                 
                             @foreach($comic['writers'] as $key => $value)
-                            
-                                <span>
+                                {{-- <span>
                                     {{$value}} 
-                                    {{-- {{ implode(', ', $value) }} --}}
-                                </span>
-                            @endforeach
+                                </span> --}}
+                            @endforeach 
+
+                            <span class="comma">
+                                   
+                                {!! collect($comic['writers'])->implode(',') !!}
+                            </span>
+
                         </div>
                     </div>
                 </div>

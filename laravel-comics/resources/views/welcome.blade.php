@@ -26,7 +26,7 @@
                     
                     <div class="single-movie">
                         <div class="features-image">
-                            <a href="{{ route('Comic', ['index' => $key])}}">
+                            <a href="{{ route('comic', ['index' => $key])}}">
                                 <div class="wrap-only-img">
 
                                     <img src="{{ $valueMovie['thumb'] }}" alt="movie">

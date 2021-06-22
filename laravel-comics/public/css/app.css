@@ -40,11 +40,6 @@ header .blue-bg .top-nav .d-flex .list-item a {
   text-transform: uppercase;
 }
 
-header .blue-bg .top-nav .d-flex .list-item a.active {
-  color: #0282F9;
-  text-decoration: none;
-}
-
 header div .bot-nav {
   margin: auto;
   max-width: 1200px;
@@ -83,6 +78,12 @@ header div .bot-nav ul li a {
 header div .bot-nav ul li a:hover {
   border-bottom: 4px solid #0282F9;
   color: #0282F9;
+}
+
+header div .bot-nav ul li a.active {
+  color: #0282F9;
+  text-decoration: none;
+  border-bottom: 4px solid #0282F9;
 }
 
 header div .bot-nav ul li .my-sort-down i {

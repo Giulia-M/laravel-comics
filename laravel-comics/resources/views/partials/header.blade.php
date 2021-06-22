@@ -22,8 +22,15 @@
 
     <div>
         {{-- nell if ternario l'index = 0 equivale a false  --}}
+        {{-- metodo statico route, getname recuperare il nome
+            della mia rotta--}}
+
+        {{-- dump(Request::route()->getName()); --}}
         @php
+
+         
             function setLinkClass(...$pageNames){
+               
                 $routeName = Request::route()->getName();
                 $contains = array_search( $routeName, $pageNames);
                 
@@ -37,13 +44,14 @@
             </div>
             <ul>
                 <li>
-                    <a href="#"  href="#">Characters</a>
-                    {{-- <a href="#" class=" {{ Request::route()->getName() == 'pagina-welcome' ? 'active' : '' }} "  href="{{ route('pagina-welcome') }}">Characters</a> --}}
+                    {{-- <a href="#"  href="#">Characters</a> --}}
+                    <a href="#" class=" {{ Request::route()->getName() == 'character' ? 'active' : '' }} "  href="{{ route('character') }}">Characters</a>
 
                 </li>
                 <li>
-                    {{-- nn funziona --}}
-                    <a href="#" class="{{ setLinkClass('pagina-welcome' , 'Comic') }}"  href="{{ route('pagina-welcome') }}">Comics</a>
+                    
+                    <a href="#" class="{{ setLinkClass('comics' , 'comic') }}"  href="{{ route('comics') }}">Comics</a>
+                    {{-- <a href="{{ route('comics') }}" class="{{ Request::route()->getName() == 'comic' ? 'active' : '' }} ">Comics</a> --}}
                 </li>
                 <li>
                     <a href="#">Movies</a>

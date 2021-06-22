@@ -23,20 +23,20 @@ header {
                         text-decoration: none;
                         color: #fff;
                         text-transform: uppercase;
-                        &.active {
-                            color: #0282F9;
-                            text-decoration: none;
-                        }
+                      
                         
     
                     }
                 }
+
+
             }
         }
     }
 
     
     div {
+        
        
         .bot-nav {
             @include container-w;
@@ -67,6 +67,13 @@ header {
                         &:hover {
                             border-bottom: 4px solid $color_blue;
                             color: $color_blue;
+                        }
+                        
+                        &.active {
+                            color: #0282F9;
+                            text-decoration: none; 
+                            border-bottom: 4px solid $color_blue;
+
                         }
                         
                     }

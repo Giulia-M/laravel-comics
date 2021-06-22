@@ -38,7 +38,7 @@ Route::get('/comic/{index}', function ($index) {
     return view('/partials/singlecomics', [
         "comic" => $comicScelto
     ]);
-})->name("Comic");
+})->name("comic");
 
 Route::get('/navbar', function () {
     return "";
@@ -47,5 +47,13 @@ Route::get('/navbar', function () {
 Route::get('/additional_sites', function () {
     return "";
 })->name("additional-sites");
+
+Route::get('/character', function () {
+    return "";
+})->name("character");
+
+Route::get('/comics', function () {
+    return "";
+})->name("comics");
 
 

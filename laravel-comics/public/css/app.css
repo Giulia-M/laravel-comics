@@ -632,7 +632,7 @@ section .utility-links .wrapper {
 section .utility-links .wrapper .col-3 {
   width: 25%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
   padding: 10px 0;
   border: 1px solid #E6E6E6;
@@ -642,13 +642,41 @@ section .utility-links .wrapper .col-3 {
   border-top: none;
 }
 
+section .utility-links .wrapper .col-3 a.link-sprite {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #B5AEB8;
+  padding-bottom: 18px;
+}
+
+section .utility-links .wrapper .col-3 a.link-sprite .bg-sprite {
+  background-image: url("/images/cta-icons.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  margin-left: 112px;
+}
+
+section .utility-links .wrapper .col-3 .img-1 {
+  background-position-x: 0;
+}
+
+section .utility-links .wrapper .col-3 .img-2 {
+  background-position-x: -37px;
+}
+
+section .utility-links .wrapper .col-3 .img-3 {
+  background-position-x: -74px;
+}
+
+section .utility-links .wrapper .col-3 .img-4 {
+  background-position-x: -111px;
+}
+
 section .utility-links .wrapper .col-3 h5 {
   color: #ABA3A6;
   text-transform: uppercase;
-}
-
-section .utility-links .wrapper .col-3:nth-child(3) .icon-container img {
-  width: 26px;
 }
 
 section .utility-links .wrapper .col-3 .icon-container {

@@ -195,35 +195,54 @@
             <div class="wrapper">
 
                 <div class="col-3">
-                    <h5>digital comics</h5>
+                    {{-- <h5>digital comics</h5> --}}
 
-                    <div class="icon-container">
-                        <img src="{{ asset('images/buy-comics-digital-comics.png') }}" alt="">
-                    </div>
+                  
+                        <a href="#" class="link-sprite" >digital comics
+                            <i class="bg-sprite img-1"></i>
+                        </a>
+
+                        {{-- <img src="{{ asset('images/buy-comics-digital-comics.png') }}" alt=""> --}}
+             
                 </div>
 
                 <div class="col-3">
-                    <h5>shop dc</h5>
+                    
+                    {{-- <h5>shop dc</h5> --}}
 
-                    <div class="icon-container">
-                        <img src="{{ asset('images/buy-comics-merchandise.png') }}" alt="">
-                    </div>
+           
+                        {{-- <img src="{{ asset('images/buy-comics-merchandise.png') }}" alt=""> --}}
+                        {{-- <i class="bg-icon img-2"></i> --}}
+                        <a href="#" class="link-sprite" >shop dc
+                            <i class="bg-sprite img-2"></i>
+                        </a>
+                
                 </div>
 
                 <div class="col-3">
-                    <h5>comic shop locator</h5>
+                    {{-- <h5>comic shop locator</h5> --}}
 
-                    <div class="icon-container">
-                        <img src="{{ asset('images/buy-comics-shop-locator.png') }}" alt="">
-                    </div>
+                   
+                        {{-- <img src="{{ asset('images/buy-comics-shop-locator.png') }}" alt=""> --}}
+                        {{-- <i class="bg-icon img-3"></i> --}}
+                        <a href="#" class="link-sprite" >comic shop locator
+                            <i class="bg-sprite img-3"></i>
+                        </a>
+
                 </div>
 
                 <div class="col-3">
-                    <h5>subscriptions</h5>
+                    {{-- <h5>subscriptions</h5> --}}
 
-                    <div class="icon-container">
-                        <img src="{{ asset('images/buy-comics-subscriptions.png') }}" alt="">
-                    </div>
+                    
+                        {{-- <img src="{{ asset('images/buy-comics-subscriptions.png') }}" alt=""> --}}
+                        {{-- <i class="bg-icon img-4"></i> --}}
+
+                        <a href="#" class="link-sprite">subscriptions
+                            <i class="bg-sprite img-4"></i>
+                        </a>
+
+                   
 
                 </div>
 

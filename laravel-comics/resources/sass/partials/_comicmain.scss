@@ -225,18 +225,48 @@ section {
         .wrapper {
             display: flex;
             @include container-w;
-            border: 1px solid #E6E6E6 ;
+            border: 1px solid #E6E6E6;
 
             .col-3 {
                 width: $col-3;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 align-items: flex-start;
                 padding: $spacing/2 0;
-                border: 1px solid #E6E6E6 ;
+                border: 1px solid #E6E6E6;
                 & { 
                     border-top: none; 
                 }
+
+                a.link-sprite {
+                    // padding: 14px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #B5AEB8;
+                    padding-bottom: 18px;
+                    .bg-sprite {
+                        background-image: url("/images/cta-icons.png");
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        width: 37px;
+                        height: 37px;
+                        margin-left: 112px;
+                    }
+                }
+
+                .img-1 {
+                    background-position-x: 0;
+                }
+                .img-2 {
+                    background-position-x: -37px;
+                }
+                .img-3 {
+                    background-position-x: -74px;
+                }
+                .img-4 {
+                    background-position-x: -111px;
+                }
+
                 h5 {
                     color: #ABA3A6;
                     text-transform: uppercase;
@@ -245,9 +275,11 @@ section {
                 &:nth-child(3) {
                         
                     .icon-container {
-                        img {
-                            width: $spacing + 6px;
-                        }
+                        // img {
+                        //     width: $spacing + 6px;
+                        // }
+
+                   
                     }
                     
                     

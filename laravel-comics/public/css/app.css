@@ -617,11 +617,11 @@ footer .footer-bott .container .d-flex img {
   font-weight: bolder;
 }
 
-section {
+.sec-3 {
   border: 1px solid #E6E6E6;
 }
 
-section .utility-links .wrapper {
+.sec-3 .utility-links .wrapper {
   display: flex;
   margin: auto;
   max-width: 1200px;
@@ -629,7 +629,7 @@ section .utility-links .wrapper {
   border: 1px solid #E6E6E6;
 }
 
-section .utility-links .wrapper .col-3 {
+.sec-3 .utility-links .wrapper .col-3 {
   width: 25%;
   display: flex;
   justify-content: space-evenly;
@@ -638,18 +638,18 @@ section .utility-links .wrapper .col-3 {
   border: 1px solid #E6E6E6;
 }
 
-section .utility-links .wrapper .col-3 {
+.sec-3 .utility-links .wrapper .col-3 {
   border-top: none;
 }
 
-section .utility-links .wrapper .col-3 a.link-sprite {
+.sec-3 .utility-links .wrapper .col-3 a.link-sprite {
   text-transform: uppercase;
   text-decoration: none;
   color: #B5AEB8;
   padding-bottom: 18px;
 }
 
-section .utility-links .wrapper .col-3 a.link-sprite .bg-sprite {
+.sec-3 .utility-links .wrapper .col-3 a.link-sprite .bg-sprite {
   background-image: url("/images/cta-icons.png");
   background-repeat: no-repeat;
   display: inline-block;
@@ -658,33 +658,33 @@ section .utility-links .wrapper .col-3 a.link-sprite .bg-sprite {
   margin-left: 112px;
 }
 
-section .utility-links .wrapper .col-3 .img-1 {
+.sec-3 .utility-links .wrapper .col-3 .img-1 {
   background-position-x: 0;
 }
 
-section .utility-links .wrapper .col-3 .img-2 {
+.sec-3 .utility-links .wrapper .col-3 .img-2 {
   background-position-x: -37px;
 }
 
-section .utility-links .wrapper .col-3 .img-3 {
+.sec-3 .utility-links .wrapper .col-3 .img-3 {
   background-position-x: -74px;
 }
 
-section .utility-links .wrapper .col-3 .img-4 {
+.sec-3 .utility-links .wrapper .col-3 .img-4 {
   background-position-x: -111px;
 }
 
-section .utility-links .wrapper .col-3 h5 {
+.sec-3 .utility-links .wrapper .col-3 h5 {
   color: #ABA3A6;
   text-transform: uppercase;
 }
 
-section .utility-links .wrapper .col-3 .icon-container {
+.sec-3 .utility-links .wrapper .col-3 .icon-container {
   width: 100%;
   max-width: 40px;
 }
 
-section .utility-links .wrapper .col-3 .icon-container img {
+.sec-3 .utility-links .wrapper .col-3 .icon-container img {
   width: 100%;
   background-color: #D8D8D8;
 }

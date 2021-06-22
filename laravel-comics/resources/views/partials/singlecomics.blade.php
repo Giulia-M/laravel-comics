@@ -178,10 +178,16 @@
 
                     <div class="col-8">
                     
-                        <div>
-                                
-                            {{ $comic['sale_date']}}
-                        </div>
+                        
+
+                        @php
+                            
+                            $timestamp = strtotime( $comic['sale_date'] );  
+                           
+                            print date('M d Y', $timestamp );
+
+                            
+                        @endphp
                     </div>
                 </div>
 
@@ -189,7 +195,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="sec-3">
 
         <div class="utility-links">
             <div class="wrapper">
